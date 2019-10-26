@@ -1,0 +1,47 @@
+.navbar {
+  background-color: transparent;
+  color: $white;
+  a { color: $white }
+  .navbar-brand {
+    .navbar-item {
+      font-weight: bolder;
+    }
+  }
+  .navbar-item {
+    font-size: 1.3rem;
+    padding: 1rem;
+
+    &:hover {
+      background-color: rgba(250,250,250,0.1);
+      color: $white;
+    }
+  }
+
+  &.is-colored {
+    background-color: $primary;
+    color: #fff;
+    a.navbar-item {
+      color: #fff;
+      &:hover {
+        color: #3273dc;
+      }
+    }
+  }
+
+  @media screen and (max-width: 769px) {
+    .navbar-item {
+      font-size: 1.2rem;
+      padding: 1rem;
+    }
+
+    #navBurger {
+      .navbar-item {
+        color: $black;
+      }
+    }
+
+    &.is-colored {
+      background-color: $primary;
+    }
+  }
+}
