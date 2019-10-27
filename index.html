@@ -41,7 +41,7 @@ scripts:
   </div>
 </section>
 
-<section id="thinking-together" class="section is-light">
+<section id="thinking-together" class="section is-white">
   <div class="container">
     <img class="image" src="/assets/images/index/introdunction/image-2.png">
     <h1 class="title">Thinking together - 一緒になって考える</h1>
@@ -58,7 +58,7 @@ scripts:
   </div>
 </section>
 
-<section id="share-what-you-made" class="section is-white">
+<section id="share-what-you-made" class="section is-light">
     <div class="container">
       <img class="image" src="/assets/images/index/introdunction/image-1.jpg">
       <h1 class="title">Share what you made - 作ったものを共有する</h1>
@@ -77,7 +77,7 @@ scripts:
     </div>
 </section>
 
-<section id="share-what-you-made" class="section is-light">
+<section id="share-what-you-made" class="section is-white">
     <div class="container">
       <img class="image" src="/assets/images/index/introdunction/image-3.jpg">
       <h1 class="title">Learn with each other -  共に学び、共に磨く</h1>
@@ -98,7 +98,7 @@ scripts:
     </div>
 </section>
 
-<section id="slides" class="section is-white">
+<section id="slides" class="section is-light">
     <div class="container">
       <h1 class="title">当日のながれのスライド (第15回の内容)</h1>
       <p>当日の具体的な流れと様子についてわかるかと思います！</p>
@@ -107,7 +107,7 @@ scripts:
     </div>
 </section>
 
-<section id="supporters" class="section is-light">
+<section id="supporters" class="section is-white">
     <div class="container">
       <h1 class="title">Supporters</h1>
       <p>CoderDojo 岡山 岡南 の活動はこれらのサポーターの皆様によって成り立っています。</p>
@@ -125,7 +125,7 @@ scripts:
     </div>
 </section>
 
-<section id="how-to-support" class="section is-white">
+<section id="how-to-support" class="section is-light">
   <div class="container">
     <h1 class="title">How to Support Us</h1>
     <p>私たちの活動を支援していただけますか？ 支援する方法はたくさんあります！</p>
@@ -144,6 +144,56 @@ scripts:
         </a>
       </li>
     </ul>
+  </div>
+</section>
+
+<section id="contact" class="section is-white">
+  <div class="container">
+    <h1 class="title">Contact us</h1>
+    <p>お問い合わせフォームです。</p>
+    <hr>
+    <div class="contact-form">
+      <form id="contact-form" action="http://localhost:3000/contact" method="POST" accept-charset="UTF-8">
+        <div class="message"></div>
+        <div class="field">
+          <label class="label">お名前</label>
+          <div class="control">
+            <input class="input" type="text" name="name" placeholder="山田 太郎">
+          </div>
+          <p class="error error-name help is-danger"></p>
+        </div>
+        
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control">
+            <input class="input" type="email" name="email" placeholder="hogehoge@example.com">
+          </div>
+          <p class="error error-email help is-danger"></p>
+        </div>
+
+        <div class="field">
+          <label class="label">件名</label>
+          <div class="control">
+            <input class="input" type="text" name="subject" placeholder="○○についての質問">
+          </div>
+          <p class="error error-subject help is-danger"></p>
+        </div>
+
+        <div class="field">
+          <label class="label">本文</label>
+          <div class="control">
+            <textarea class="textarea" name="body" rows="5" placeholder="Please type something...""></textarea>
+          </div>
+          <p class="error error-body help is-danger"></p>
+        </div>
+
+        <input class="recaptcha-token" type="hidden" name="recaptcha-token">
+
+        <div class="control">
+          <button class="button is-primary">Submit</button>
+        </div>
+      </form>
+    </div>
   </div>
 </section>
 

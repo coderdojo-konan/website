@@ -55,7 +55,10 @@
     padding: 5rem 1rem;
 
     &.is-light {
-      background-color: $light;
+      background-color: $white-bis;
+      hr {
+        background-color: $white;
+      }
     }
 
     &.is-white {
@@ -127,6 +130,7 @@
       }
     }
   }
+
   .how-to-support-list {
     list-style: none;
 
@@ -152,6 +156,43 @@
       .text {
         color: #4a4a4a;
         font-size: 1.3rem;
+      }
+    }
+  }
+
+  #contact {
+    .contact-form {
+      .message {
+        &.success-message {
+          padding: .5rem 0;
+          color: $white;
+          background-color: $success;
+        }
+        &.error-message {
+          padding: .5rem 0;
+          color: $white;
+          background-color: $danger;
+        }
+      }
+      form {
+        margin: 0 auto;
+        max-width: 80%;
+        @media screen and (max-width: 769px) {
+          max-width: 100%;
+        }
+
+        .label {
+          text-align: left;
+        }
+
+        .field {
+          margin: 0 0 1rem 0;
+        }
+        
+        .error {
+          text-align: left;
+          margin: 0 1rem .5rem 0;
+        }
       }
     }
   }
