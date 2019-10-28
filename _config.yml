@@ -2,8 +2,12 @@ title: CoderDojo Konan
 description: >-
 baseurl: ""
 url: ""
-twitter_username:
-github_username:
+
+facebook_url: https://www.facebook.com/CoderDojo.Konan/
+twitter_id: CoderDojoKonan_
+instagram_id: coderdojo.konan
+github_id: coderdojo-konan
+
 
 plugins:
   - jekyll-feed

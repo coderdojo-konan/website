@@ -7,6 +7,21 @@ p {
   margin-bottom: .5rem;
 }
 
+.footer {
+  background-color: $light;
+  .socials {
+    margin: 0 auto 1rem auto;
+
+    a {
+      margin: 0 0 0 .5rem;
+    }
+
+    svg {
+      color: $primary;
+    }
+  }
+}
+
 @media screen and (max-width: 1050px) {
   .iframe-wrapper {
     position: relative;
