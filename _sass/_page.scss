@@ -8,7 +8,7 @@
 
     .container {
       margin: 5rem auto 1rem auto;
-      padding: 3rem 7rem 5rem;
+      padding: 5rem 7rem 5rem;
       background-color:  $white;
 
       .title {
@@ -49,6 +49,86 @@
         margin: 4rem auto 2rem auto;
         padding: 2rem 2rem 3rem;
         background-color:  $white;
+      }
+    }
+  }
+}
+
+#pagelist-root {
+  background-color: $white-bis;
+  .section {
+    background-color: $white-bis;
+    padding: 1rem 2rem 1rem;
+    margin: 0 auto;
+
+
+
+    .container {
+      margin: 5rem auto 1rem auto;
+      background-color:  $white-bis;
+
+      .head {
+        background-color: $white;
+
+        padding: 1rem 5rem 1rem 5rem;
+
+        .title {
+          font-size: 2.5rem;
+          padding: 0 0 .5rem 0;
+          text-align: center;
+          border-bottom: 4px dotted $primary;
+        }
+      }
+
+      .page {
+        display: flex;
+        flex-wrap: wrap;
+
+        margin: 1rem 0;
+        
+        background-color: $white;
+        padding: 1rem 4rem;
+        a.button {
+          text-align: right;
+          margin: 1rem 0 1rem auto;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .section {
+      padding: 2rem;
+      max-width: 100%;
+      .container {
+        .head {
+          background-color: $white;
+  
+          padding: 1rem 2rem 1rem 2rem;
+  
+          .title {
+            font-size: 2.5rem;
+            padding: 0 0 1rem 0;
+            text-align: center;
+            border-bottom: 4px dotted $primary;
+          }
+        }
+  
+        margin: 4rem auto 2rem auto;
+        padding: 0 0 3rem;
+
+        .page {
+          display: flex;
+          flex-wrap: wrap;
+  
+          margin: 1rem 0;
+          
+          background-color: $white;
+          padding: 1rem 2rem;
+          a.button {
+            text-align: right;
+            margin: 1rem 0 1rem auto;
+          }
+        }
       }
     }
   }

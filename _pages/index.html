@@ -1,0 +1,25 @@
+---
+layout: default
+title: ページ一覧
+---
+
+<div id="pagelist-root">
+<main>
+  <section id="page-list" class="section">
+
+    <div class="container">
+      <div class="head">
+        <h1 class="title">Page Index</h1>
+      </div>
+
+      {% for page in site.pages %}
+        <div class="page">
+          <h2>{{ page.title }}</h2>
+          <a href="{{page.url}}" class="button is-primary is-rounded">> 確認する</a>
+        </div>
+      {% endfor %}
+    </div>
+
+  </section>
+</main>
+</div>

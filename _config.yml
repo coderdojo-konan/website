@@ -8,6 +8,9 @@ twitter_id: CoderDojoKonan_
 instagram_id: coderdojo.konan
 github_id: coderdojo-konan
 
+collections:
+  pages:
+    output: true
 
 plugins:
   - jekyll-feed
