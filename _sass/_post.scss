@@ -1,0 +1,63 @@
+#post-root {
+  background-color: $light;
+  .section {
+    background-color: $light;
+    max-width: 1024px;
+    padding: 1rem 2rem 1rem;
+    margin: 0 auto;
+
+    .container {
+      margin: 5rem auto 1rem auto;
+      padding: 5rem 5rem 5rem;
+      background-color:  $white;
+
+      .date {
+        color: $grey;
+        font-size: 1.1rem;
+      }
+
+      .title {
+        font-size: 2.5rem;
+        margin: 0 0 1rem 0;
+      }
+
+      .sns-share-list {
+        margin: 0 0 1rem;
+      } 
+      
+      .content {
+        h1 {
+          font-size: 2rem;
+          padding: 0 0 0.5rem 0;
+          border-bottom: 3px dotted $primary;
+        }
+
+        h2 {
+          font-size: 1.8rem;
+          padding: 0 0 0.5rem 0;
+          border-bottom: 2px solid $primary;
+        }
+
+        h3 { font-size: 1.5rem; }
+        h4 { font-size: 1.3rem; }
+        h5 { font-size: 1.1rem; }
+        h6 { font-size: 1.0rem; }
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .section {
+      padding: 2rem;
+      max-width: 100%;
+      .container {
+        .title {
+          font-size: 2rem;
+        }
+  
+        margin: 4rem auto 2rem auto;
+        padding: 2rem 2rem 3rem;
+        background-color:  $white;
+      }
+    }
+  }
+}

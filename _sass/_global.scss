@@ -45,3 +45,60 @@ h6 { font-size: 1.0rem; }
     }
   }
 }
+
+.sns-share-list {
+  list-style:none;
+  display: flex;
+  flex-wrap:wrap;
+  padding:0;
+
+  .sns-share-list__item {
+    flex: 1;
+    display: block;
+    text-align:center;
+
+    .sns-share-list__link {
+      padding: 1rem 0;
+      display:block;
+      color:#ffffff;
+      text-decoration: none;
+
+      &::before {
+        font-size:20px;
+        display:block;
+        transition: ease-in-out .2s;
+      }
+
+      &:hover::before {
+        background:#ffffff;
+        transform: scale(1.2);
+        box-shadow:1px 1px 4px 0px rgba(0,0,0,0.15);
+      }
+
+      &.icon-twitter {
+        background:#55acee !important;
+
+        &:hover::before{
+          color:#55acee;
+        }
+      }
+
+      &.icon-facebook {
+        background:#3B5998 !important;
+
+        &:hover::before {
+          color:#3B5998;
+        }
+      }
+
+      &.icon-google-plus {
+        background:#dd4b39 !important;
+
+        &:hover::before {
+          color:#dd4b39;
+        }
+      }
+    }
+    
+  }
+}
