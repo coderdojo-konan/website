@@ -1,5 +1,12 @@
 $(document).ready(function(){
   let main_offset = $('main').offset()
+  let scroll_start = $(document).scrollTop();
+  
+  if (scroll_start > main_offset.top) {
+    $('.navbar').addClass('is-colored')
+  } else {
+    $('.navbar').removeClass('is-colored')
+  }
 
   $(document).scroll(function(){
     scroll_start = $(document).scrollTop();
@@ -24,7 +31,6 @@ $(document).ready(function() {
     $('.message').removeClass('error-message')
     $('#contact-form input').removeClass('is-danger')
     $('#contact-form textarea').removeClass('is-danger')
-    console.log($('#contact-form　.form-input'))
 
     const data = {
       name: $('#contact-form [name=name]').val(),
