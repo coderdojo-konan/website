@@ -14,6 +14,7 @@ $(document).ready(function(){
 $(document).ready(function() {
   $('#contact-form').submit(function(e){
     let flag = true;
+    const url = 'https://coderdojo-konan-website-api.herokuapp.com/form'
 
     e.preventDefault();
 
@@ -21,6 +22,9 @@ $(document).ready(function() {
     $('.message').text('')
     $('.message').removeClass('success-message')
     $('.message').removeClass('error-message')
+    $('#contact-form input').removeClass('is-danger')
+    $('#contact-form textarea').removeClass('is-danger')
+    console.log($('#contact-form　.form-input'))
 
     const data = {
       name: $('#contact-form [name=name]').val(),
@@ -52,15 +56,19 @@ $(document).ready(function() {
     }
 
     if (flag) {
-      $.post('http://localhost:3000/contact', data)
-        .done(function(res) {
+      $.post(url, data)
+        .done(res => {
           if (res === 'success') {
             $('.message').text('送信に成功しました！')
             $('.message').addClass('success-message')
           } else {
-            $('.message').text('送信に失敗しました。もう一度お試しください。')
+            $('.message').text(`送信に失敗しました。もう一度お試しください。`)
             $('.message').addClass('error-message')
           }
+        })
+        .fail(() => {
+          $('.message').text(`送信に失敗しました。もう一度お試しください。`)
+          $('.message').addClass('error-message')
         })
 
       grecaptcha.execute('6LeDrL8UAAAAAN0WsBFZK60QCR7E4QEjSOFUCM_-', {action: 'homepage'}).then(function(token) {
