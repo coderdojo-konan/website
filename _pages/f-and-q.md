@@ -1,5 +1,5 @@
 ---
-title: 各種警報発令時・災害時 の対応について
+title: よくある質問 (F&Q)
 desc: よくある質問をまとめました。類似の質問がないかお問い合わせの前にご確認ください。
 layout: page
 permalink: /f-and-q
