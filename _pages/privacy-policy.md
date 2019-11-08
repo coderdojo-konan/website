@@ -1,6 +1,6 @@
 ---
 title: プライバシー・ポリシー
-desc: CoderDojo 岡山 岡南 のプライバシーポリシー (個人情報保護方針) です。
+desc: CoderDojo 岡南 のプライバシーポリシー (個人情報保護方針) です。
 layout: page
 permalink: /privacy-policy
 ---
@@ -57,7 +57,7 @@ CoderDojo 岡山 岡南（以下「当会」）は、以下のとおり個人情
 # お問い合せ先
 当会の個人情報の取扱に関するお問い合せは下記までご連絡ください。
 
-**コーダー道場 岡山 岡南（CoderDojo Konan Okayama）**  
+**コーダー道場 岡南（CoderDojo Konan)**  
 E-mail: [contact@coderdojo-konan.jp](/#contact)
 
 代表者: 伊藤 秀一 (いとう ひでかず)  
