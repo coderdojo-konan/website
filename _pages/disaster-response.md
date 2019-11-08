@@ -1,6 +1,7 @@
 ---
 title: 各種警報発令時・災害時 の対応について
 layout: page
+permalink: /disaster-response
 ---
 
 会場となる公民館なども別途対応を定めている場合があります。
