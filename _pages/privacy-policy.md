@@ -58,7 +58,7 @@ CoderDojo 岡山 岡南（以下「当会」）は、以下のとおり個人情
 当会の個人情報の取扱に関するお問い合せは下記までご連絡ください。
 
 **コーダー道場 岡山 岡南（CoderDojo Konan Okayama）**  
-E-mail: [contact@coderdojo-konan.jp](/contact-form)
+E-mail: [contact@coderdojo-konan.jp](/#contact)
 
 代表者: 伊藤 秀一 (いとう ひでかず)  
 お問い合わせ担当: 曽我 悠真 (そが ゆうま)
