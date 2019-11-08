@@ -37,6 +37,7 @@ $(document).ready(function() {
       email: $('#contact-form [name=email]').val(),
       subject: $('#contact-form [name=subject]').val(),
       body: $('#contact-form [name=body]').val(),
+      agreePrivacyPolicy: $('#contact-form [name=agree-privacy-policy]').prop('checked'),
       recaptchaToken: $('#contact-form [name=recaptcha-token]').val()
     }
 
@@ -60,8 +61,14 @@ $(document).ready(function() {
       $('#contact-form [name=body]').addClass('is-danger')
       flag = false
     }
+    if(!data.agreePrivacyPolicy) {
+      $('.error-agreement').text('個人情報保護方針への同意をお願いします。')
+      $('#contact-form [name=agree-privacy-policy]').addClass('is-danger')
+      flag = false
+    }
 
     if (flag) {
+      $('#contact-form button').addClass('is-loading')
       $.post(url, data)
         .done(res => {
           if (res === 'success') {
@@ -71,16 +78,21 @@ $(document).ready(function() {
             $('.message').text(`送信に失敗しました。もう一度お試しください。`)
             $('.message').addClass('error-message')
           }
+          $('#contact-form button').removeClass('is-loading')
         })
         .fail(() => {
           $('.message').text(`送信に失敗しました。もう一度お試しください。`)
           $('.message').addClass('error-message')
+          $('#contact-form button').removeClass('is-loading')
         })
 
       grecaptcha.execute('6LeDrL8UAAAAAN0WsBFZK60QCR7E4QEjSOFUCM_-', {action: 'homepage'}).then(function(token) {
         $('.recaptcha-token').val(token);
       })
     } else {
+      $('.message').text('不足している項目があります。ご確認ください。')
+      $('.message').addClass('error-message')
+
       return flag
     }
   })
