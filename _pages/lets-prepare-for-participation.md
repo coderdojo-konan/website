@@ -2,7 +2,7 @@
 title: 参加へ向けて準備をしよう！
 desc: 参加に向けての準備することのご案内です。
 layout: page
-permalink: /lets-prepare-for-participation.md
+permalink: /lets-prepare-for-participation
 ---
 
 # 全コース共通の持ち物:
