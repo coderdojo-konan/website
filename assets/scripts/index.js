@@ -21,7 +21,7 @@ $(document).ready(function(){
 $(document).ready(function() {
   $('#contact-form').submit(function(e){
     let flag = true;
-    const url = 'http://localhost:3000/form'
+    const url = 'https://coderdojo-konan-website-api.herokuapp.com/form'
 
     e.preventDefault();
 
