@@ -75,13 +75,13 @@ $(document).ready(function() {
             $('.message').text('送信に成功しました！')
             $('.message').addClass('success-message')
           } else {
-            $('.message').text(`送信に失敗しました。もう一度お試しください。`)
+            $('.message').text(`送信に失敗しました。もう一度お試しください。/ error: ${res}`)
             $('.message').addClass('error-message')
           }
           $('#contact-form button').removeClass('is-loading')
         })
-        .fail(() => {
-          $('.message').text(`送信に失敗しました。もう一度お試しください。`)
+        .fail(res => {
+          $('.message').text(`送信に失敗しました。もう一度お試しください。 / error: Posting failed.`)
           $('.message').addClass('error-message')
           $('#contact-form button').removeClass('is-loading')
         })
