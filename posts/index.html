@@ -1,0 +1,33 @@
+---
+layout: default
+title: 投稿一覧
+---
+
+<div id="postlist-root">
+<main>
+  <section id="post-list" class="section">
+
+    <div class="container">
+      <div class="head">
+        <h1 class="title">Posts Index</h1>
+      </div>
+
+      <ul class="posts">
+        {% for post in site.posts %}
+          <li class="post">
+            <a class="link-wrapper" href="{{ post.url }}"></a>
+            <div>
+              <p class="post-date">{{ post.date | date: "%Y/%m/%d" }}</p>
+              <h2 class="post-title">{{ post.title }}</h2>
+            </div>
+            <div class="post-desc">
+              <p>{% if post.desc %}{{ post.desc }}{% else %}{{ post.content | strip_html | truncate: 130 }}{% endif %}</p>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+  </section>
+</main>
+</div>
