@@ -11,10 +11,12 @@ gem 'rest-client'
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
+  gem "jekyll-gist"
+  gem "jekyll-paginate"
+  gem "jekyll-admin"
   gem 'jekyll-sitemap'
-  gem 'jekyll-admin'
   gem 'jemoji'
-  gem 'jekyll-gist'
+  gem 'jekyll-archives'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
