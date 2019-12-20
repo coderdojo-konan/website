@@ -28,7 +28,7 @@
     }
   }
 
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 1023px) {
     .navbar-item {
       font-size: 1.2rem;
       padding: 1rem;
@@ -37,11 +37,14 @@
     #navBurger {
       .navbar-item {
         color: $black;
-      }
-    }
-
+}}
     &.is-colored {
       background-color: $primary;
+	     a.navbar-item {color:#000;
+	      &:hover {
+	      color:#000;
+      }
+    }
     }
   }
 }
