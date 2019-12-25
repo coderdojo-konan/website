@@ -1,11 +1,19 @@
 .navbar{
   background-color: transparent;
   color: $white;
-  height: 3.0rem;
+  height: 5.0rem;
   a { color: $white }
   .navbar-brand {
+    flex-shrink: 1;
     .navbar-item {
+      display: inline-block;
+      width: 100%;
       font-weight: bolder;
+      img {
+        max-width: 100%;
+        height: 100%;
+        max-height: none;
+      }
     }
   }
   .navbar-item {
@@ -35,10 +43,27 @@
       padding: 1rem;
     }
 
+    .navbar-brand {
+      flex-shrink: 1;
+      .navbar-item {
+        max-width: 15rem;
+        display: inline-block;
+        width: 100%;
+        font-weight: bolder;
+        img {
+          max-width: 100%;
+          height: auto;
+          max-height: none;
+        }
+      }
+    }
+
     #navBurger {
       .navbar-item {
         color: $black;
-}}
+      }
+    }
+
     &.is-colored {
       background-color: $primary;
 	     a.navbar-item {color:#000;
@@ -46,6 +71,45 @@
 	      color:#000;
       }
     }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 5.0rem;
+
+    .navbar-item {
+      font-size: 1.2rem;
+      padding: 1rem;
+    }
+
+    .navbar-brand {
+      flex-shrink: 1;
+      .navbar-item {
+        max-width: 15rem;
+        display: inline-block;
+        width: 100%;
+        font-weight: bolder;
+        img {
+          max-width: 100%;
+          height: auto;
+          max-height: none;
+        }
+      }
+    }
+
+    #navBurger {
+      .navbar-item {
+        color: $black;
+      }
+    }
+
+    &.is-colored {
+      background-color: $primary;
+	     a.navbar-item {color:#000;
+	      &:hover {
+	      color:#000;
+        }
+      }
     }
   }
 }
