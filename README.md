@@ -10,3 +10,4 @@ Contribution 大歓迎です。Jekyll によって生成されています。Rub
 2. `$ bundle install --path=vendor/bundle` を実行して関連の gem をインストール
 3. `$ bundle exec jekyll s` で実行
 4. [localhost:4000](http://localhost:4000) にアクセス
+
