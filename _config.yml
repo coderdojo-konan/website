@@ -4,7 +4,7 @@ description: >-
   CoderDojoでは、Ninja同士（参加している子供をNinjaといいます。）で教えあったり、
   わからないことがあれば、現役プログラマーを中心としたメンターさんに質問したりできます。
 baseurl: ""
-url: "https://coderdojo-konan.jp/"
+url: "//coderdojo-konan.jp"
 
 facebook_url: https://www.facebook.com/CoderDojo.Konan/
 twitter_id: CoderDojoKonan_
