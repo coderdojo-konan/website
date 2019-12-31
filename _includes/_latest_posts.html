@@ -1,0 +1,16 @@
+<div class="postslist-wrap">
+  <ul class="posts">
+    {% for post in site.posts limit:8 %}
+      <li class="post">
+        <a class="link-wrapper" href="{{ post.url }}"></a>
+        <div>
+          <p class="post-date">{{ post.date | date: "%Y/%m/%d" }}</p>
+          <h2 class="post-title">{{ post.title }}</h2>
+        </div>
+        <div class="post-desc">
+          <p>{% if post.desc %}{{ post.desc }}{% else %}{{ post.content | strip_html | truncate: 130 }}{% endif %}</p>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

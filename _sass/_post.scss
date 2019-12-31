@@ -200,7 +200,7 @@
         margin: 0 0 .5rem 0;
 
         position: relative;
-        vertical-aligin: middle;
+        vertical-align: middle;
       }
       .post-date {
         width: 100%;
@@ -224,6 +224,102 @@
 
         p {
           margin: 0 0 .3rem 0;
+        }
+      }
+
+      p {
+        margin-bottom: .5rem;
+      }
+    }
+  }
+}
+
+.postslist-wrap {
+  margin: auto;
+  width: 100% !important;
+  line-height: normal;
+  .posts {
+    list-style: none;
+
+    display:-webkit-box;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display:-moz-flex;
+    display:flex;
+    
+    -webkit-box-lines:multiple;
+    -moz-box-lines:multiple;
+    -webkit-flex-wrap:wrap;
+    -moz-flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+
+    justify-content: center;
+
+    p {
+      margin: 0 !important;
+    }
+
+    .post {
+      position: relative;
+      width: 18rem;
+      margin: .3rem;
+      padding: 1rem 0 .5rem 0;
+      background-color: $light;
+
+      &:hover {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+      }
+
+      .link-wrapper {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        z-index: 2;
+      }
+
+      .post-title {
+        width: 100% !important;
+
+        font-size: 1.3rem;
+        background-color: $primary;
+        color: #fff;
+        padding: .8rem 1rem;
+        margin: 0 0 .5rem 0;
+
+        position: relative;
+        vertical-align: middle;
+      }
+      .post-date {
+        width: 100% !important;
+
+        background-color: #fff;
+        padding: 0.3rem 0;
+        color: $primary;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+
+        margin: 0 0 0 0;
+      }
+
+      .post-desc {
+        width: 100% !important;
+
+        padding: 0 2rem;
+        text-align: left;
+        margin: 0 0 1rem 0;
+
+        p {
+          width: 100% !important;
+          margin: 0 0 .3rem 0;
+          line-height: 1.6rem !important;
         }
       }
 
