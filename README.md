@@ -1,7 +1,7 @@
 # CoderDojo Konan Official Site
 
 CoderDojo Konan の公式サイトです。  
-<https://coderdojo-konan.netlify.com>
+<https://coderdojo-konan.>
 
 ## Contribution
 Contribution 大歓迎です。Jekyll によって生成されています。Ruby 環境が必要です。
