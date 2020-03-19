@@ -1,7 +1,10 @@
 title: CoderDojo Konan
-description: >-
+description: >- 
+  CoderDojo は7〜17歳の子どもを対象にした無料で参加できるプログラミング道場(コミュニティ)です。
+  CoderDojoでは、Ninja同士（参加している子供をNinjaといいます。）で教えあったり、
+  わからないことがあれば、現役プログラマーを中心としたメンターさんに質問したりできます。
 baseurl: ""
-url: ""
+url: "https://coderdojo-konan.jp"
 
 facebook_url: https://www.facebook.com/CoderDojo.Konan/
 twitter_id: CoderDojoKonan_
@@ -26,3 +29,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  
+include:
+  - _redirects
