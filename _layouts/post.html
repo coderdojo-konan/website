@@ -14,7 +14,7 @@ layout: default
     <ul class="sns-share-list my-3">
       <li class="sns-share-list__item">
         <a title="Share on Fasebook" class="sns-share-list__link icon-facebook" onclick="return sns_window(this, 800, 600);"
-          href="//www.facebook.com/sharer.php?src=bm&amp;u=https://www.coderdojo-konan.jp/visit-interview&amp;t= 見学・取材について - CoderDojo Konan Okayama Official Site">
+          href="//www.facebook.com/sharer.php?src=bm&amp;u={{ page.url | absolute_url }}&amp;t= {{ page.title }} - CoderDojo Konan">
             <i class="fab fa-facebook-f fa-2x"></i>
         </a>
       </li>
@@ -22,14 +22,14 @@ layout: default
       <li class="sns-share-list__item">
         <a title="Share on Twitter" class="sns-share-list__link icon-twitter" 
           onclick="return sns_window(this, 400, 600);" 
-          href="//twitter.com/share?text= 見学・取材について - CoderDojo Konan Okayama Official Site&amp;url=https://www.coderdojo-konan.jp/visit-interview&amp;via=CoderDojoKonan_">
+          href="//twitter.com/share?text= {{ page.title }} - CoderDojo Konan &amp;url={{ page.url | absolute_url }}&amp;via=CoderDojoKonan_">
             <i class="fab fa-twitter fa-2x"></i>
         </a>
       </li>
 
       <li class="sns-share-list__item">
         <a title="Share on Google+" class="sns-share-list__link icon-google-plus" onclick="return sns_window(this, 600, 500);" 
-        href="//plus.google.com/share?url=https://www.coderdojo-konan.jp/visit-interview">
+        href="//plus.google.com/share?url={{ page.url | absolute_url }}">
           <i class="fab fa-google-plus-g fa-2x"></i>
         </a>
       </li>
