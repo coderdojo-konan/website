@@ -61,6 +61,11 @@
       }
     }
   }
+  @media screen and (max-width: 768px) {
+    .section {
+      padding: 3rem 0;
+    }
+  }
 }
 
 #pagelist-root {
