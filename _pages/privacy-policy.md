@@ -1,5 +1,5 @@
 ---
-title: プライバシー・ポリシー
+title: プライバシー ポリシー
 desc: CoderDojo 岡南 のプライバシーポリシー (個人情報保護方針) です。
 layout: page
 permalink: /privacy-policy
