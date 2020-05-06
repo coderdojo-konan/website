@@ -21,7 +21,7 @@ $(document).ready(function(){
 $(document).ready(function() {
   $('#contact-form').submit(function(e){
     let flag = true;
-    const url = 'https://coderdojo-konan-website-api.herokuapp.com/form'
+    const url = 'https://api.coderdojo-konan.jp/form'
 
     e.preventDefault();
 
