@@ -164,16 +164,22 @@
     .contact-form {
       .message {
         &.success-message {
-          padding: .5rem 0;
+          padding: .5rem 1rem;
           color: $white;
           background-color: $success;
         }
         &.error-message {
-          padding: .5rem 0;
+          padding: .5rem 1rem;
           color: $white;
           background-color: $danger;
         }
       }
+      .warning {
+        width: 100%;
+        padding: .5rem 5rem;
+        background-color: $warning;
+      }
+
       form {
         margin: 0 auto;
         max-width: 80%;

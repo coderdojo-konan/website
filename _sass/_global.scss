@@ -1,6 +1,7 @@
 body {
   height: 100%;
   font-family: "Lato","Noto Sans JP",BlinkMacSystemFont,-apple-system,"Segoe UI",Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #4a4a4a;
 }
 
 p {
@@ -12,6 +13,17 @@ a {
     text-decoration: underline;
   }
 }
+
+a.btn-wrapper {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+button.is-white {
+  color: #4a4a4a !important;
+}
+
 
 .footer {
   background-color: $light;
