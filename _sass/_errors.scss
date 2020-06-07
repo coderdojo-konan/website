@@ -1,0 +1,15 @@
+#error-404 {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    text-align: center;
+    margin: 1.5rem;
+    h1 {
+      font-size: 4rem;
+      line-height: 1;
+    }
+  }
+}

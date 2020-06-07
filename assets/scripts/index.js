@@ -22,6 +22,7 @@ $(document).ready(function() {
   $('#contact-form').submit(function(e){
     let flag = true;
     const url = 'https://api.coderdojo-konan.jp/form'
+    // const url = 'http://localhost:3000/form'
 
     e.preventDefault();
 
@@ -72,16 +73,16 @@ $(document).ready(function() {
       $.post(url, data)
         .done(res => {
           if (res === 'success') {
-            $('.message').text('送信に成功しました！')
+            $('.message').text('送信に成功しました！ 確認メールが届いているかご確認ください！')
             $('.message').addClass('success-message')
           } else {
-            $('.message').text(`送信に失敗しました。もう一度お試しください。/ error: ${res}`)
+            $('.message').text(res)
             $('.message').addClass('error-message')
           }
           $('#contact-form button').removeClass('is-loading')
         })
-        .fail(res => {
-          $('.message').text(`送信に失敗しました。もう一度お試しください。 / error: Posting failed.`)
+        .fail(xhr => {
+          $('.message').text(`送信に失敗しました。もう一度お試しください。 / error: ${xhr.statusText}`)
           $('.message').addClass('error-message')
           $('#contact-form button').removeClass('is-loading')
         })
